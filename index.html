@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./pages/index.css">
+    <title>Место</title>
+</head>
+<body class="root">
+    <div class="page">
+        <header class="header">
+            <div class="header__logo"></div>
+        </header>
+        <main class="content">
+            <section class="profile">
+                <div class="profile__top">
+                    <div class="avatar">
+                        <img class="avatar__image" src="./images/avatar-image.jpg" alt="Аватар">
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="profile-info__top">
+                            <h1 class="profile-info__title">Жак-Ив Кусто</h1>
+                            <button class="profile-info__button" onclick="openForm()"></button>
+                        </div>
+                        <p class="profile-info__subtitle">Исследователь океана</p>
+                    </div>
+
+                    <!-- The form -->
+                    <div class="form-popup" id="myForm">
+                        <div class="popup">
+                            <button type="button" class="btn-cancel" onclick="closeForm()"></button>
+                            <h1 class="popup__title">Редактировать профиль</h1>
+
+                            <input type="text" placeholder="profile-info__title" class="popup__field">
+
+                            <input type="text" placeholder="profile-info__subtitle" class="popup__field">
+
+                            <button type="button" class="btn-save" onclick="saveForm()">Сохранить</button>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="add-button"></button>
+            </section>
+
+            <section class="places">
+                <div class="place">
+                    <img class="place__image" src="./images/altai.jpg" alt="Алтай">
+                    <div class="place__bottom">
+                        <h2 class="place__name">Алтай</h2>
+                        <button class="place__button"></button>
+                    </div>
+                </div>
+
+                <div class="place">
+                    <img class="place__image" src="./images/crimea.jfif" alt="Крым">
+                    <div class="place__bottom">
+                        <h2 class="place__name">Крым</h2>
+                        <button class="place__button"></button>
+                        <!-- <img class="place__button" src="./images/like.svg" alt="like"> -->
+                    </div>
+                </div>
+
+                <div class="place">
+                    <img class="place__image" src="./images/elbrus.jfif" alt="Эльбрус">
+                    <div class="place__bottom">
+                        <h2 class="place__name">Эльбрус</h2>
+                        <button class="place__button"></button>
+                        <!-- <img class="place__button" src="./images/like.svg" alt="like"> -->
+                    </div>
+                </div>
+
+                <div class="place">
+                    <img class="place__image" src="./images/kislovodsk.jpg" alt="Кисловодск">
+                    <div class="place__bottom">
+                        <h2 class="place__name">Кисловодск Плато</h2>
+                        <button class="place__button"></button>
+                        <!-- <img class="place__button" src="./images/like.svg" alt="like"> -->
+                    </div>
+                </div>
+
+                <div class="place">
+                    <img class="place__image" src="./images/moscow.jfif" alt="Москва">
+                    <div class="place__bottom">
+                        <h2 class="place__name">Москва</h2>
+                        <button class="place__button"></button>
+                        <!-- <img class="place__button" src="./images/like.svg" alt="like"> -->
+                    </div>
+                </div>
+
+                <div class="place">
+                    <img class="place__image" src="./images/pyatigorsk.jpg" alt="Пятигорск">
+                    <div class="place__bottom">
+                        <h2 class="place__name">Пятигорск</h2>
+                        <button class="place__button"></button>
+                        <!-- <img class="place__button" src="./images/like.svg" alt="like"> -->
+                    </div>
+                </div>
+
+
+            </section>
+        </main>
+        <footer class="footer">&copy 2020 Mesto Russia</footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

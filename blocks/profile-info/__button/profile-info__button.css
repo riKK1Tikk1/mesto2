@@ -1,0 +1,26 @@
+.profile-info__button {
+    margin: 0 0 0 10px;
+    height: 18px;
+    width: 18px;
+    box-sizing: border-box;
+    background-image: url(../../../images/pen.svg);
+    background-repeat: no-repeat;
+    background-size: 7.5px 7.5px;
+    background-position: center;
+    position: relative;
+    border: 1px solid #FFFFFF;
+    background-color: black;
+    /* background-color: brown; */
+}
+
+.profile-info__button:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+    .profile-info__button {
+        height: 24px;
+        width: 24px;
+        background-size: 10px 10px;
+    }
+}

@@ -1,0 +1,8 @@
+.profile-info__top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+
+    /* background-color: yellow; */
+}

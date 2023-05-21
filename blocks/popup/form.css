@@ -1,0 +1,169 @@
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    z-index: 9;
+    margin: 0;
+    padding: 0;
+}
+
+.form-popup::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000000;
+    opacity: .5;
+    z-index: -1;
+    transition: opacity .4s ease;
+}
+
+/* Add styles to the form container */
+.popup {
+    margin: 0;
+    padding: 0;
+    width: 282px;
+    height: 322px;
+    position: fixed;
+    top: 284px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+    .popup {
+        top: 360px;
+        width: 430px;
+        height: 330px;
+    }
+}
+
+.btn-cancel {
+    padding: 0;
+    position: relative;
+    top: -36px;
+    left: 262px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-image: url(../../images/close.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: center;
+    background-color: black;
+    /* background-color: brown; */
+}
+
+.btn-cancel:hover {
+    opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-cancel {
+        top: -40px;
+        left: 438px;
+        width: 32px;
+        height: 32px;
+        background-size: 32px 32px;
+    }
+}
+
+
+/* перенос на другую строку убрать */
+.popup__title {
+    padding: 0;
+    width: 238px;
+    height: 22px;
+    font-family: 'Inter','Arial',sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    margin: 5px 22px 75px 22px;
+        /* margin: 25px 22px 75px 22px; */
+    /* background-color: bisque; */
+}
+
+@media screen and (min-width: 768px) {
+    .popup__title {
+        width: 330px;
+        height: 23px;
+        font-size: 24px;
+        line-height: 29px;
+        margin: 5px 64px 54px 36px;
+                /* margin: 34px 64px 54px 36px; */
+    }
+}
+
+.popup__field {
+    padding: 0;
+    width: 238px;
+    height: 27px;
+    border: none;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin: 0 22px 30px 22px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    /* background-color: rgb(196, 240, 255); */
+}
+
+@media screen and (min-width: 768px) {
+    .popup__field {
+        width: 358px;
+        height: 27px;
+        margin: 0 36px 30px 36px;
+    }
+}
+
+.btn-save {
+    width: 238px;
+    height: 46px;
+    font-family: 'Inter','Arial',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    background-color: black;
+    border-radius: 2px;
+    margin: 15px 22px 25px 22px;
+    color: #FFFFFF;
+}
+
+.btn-save:hover {
+    opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+    .btn-save {
+        width: 358px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 22px;
+        margin: 18px 36px 37px 36px;
+    }
+}
+
+/* Full-width input fields */
+/* .form-container input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+} */
+
+/* When the inputs get focus, do something */
+/* .form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+} */

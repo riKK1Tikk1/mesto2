@@ -1,0 +1,29 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    max-width: calc(100% - 38px);
+    margin: 0 19px 36px 19px;
+    /* background-color: aquamarine; */
+}
+
+@media screen and (min-width: 501px) {
+    .profile {
+        margin: 0 auto 40px auto;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .profile {
+        margin-bottom: 45px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .profile {
+        max-width: 880px;
+        margin-bottom: 51px;
+    }
+}
