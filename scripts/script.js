@@ -2,10 +2,15 @@ function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
 
+let openForm_bth = document.getElementById("openForm_bth");
+openForm_bth.addEventListener("click", openForm);
+   
 function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
+let closeForm_bth = document.getElementById("closeForm_bth");
+closeForm_bth.addEventListener("click", closeForm);
 function saveForm() {
   // let nameInput = document.querySelector(popup__field_1);
   // let jobInput = document.querySelector(popup__field_2);
@@ -20,5 +25,8 @@ function saveForm() {
 
   document.getElementById("myForm").style.display = "none";
 }
-let addButton = container.querySelector('.btn-save');
-addButton.addEventListener('click', saveForm);
+// let addButton = container.querySelector('.btn-save');
+// addButton.addEventListener('click', saveForm);
+
+let saveForm_bth = document.getElementById("saveForm_bth");
+saveForm_bth.addEventListener("click", saveForm);

@@ -1,0 +1,12 @@
+.page__dimmer {
+    position: fixed;
+    width: 100%;
+    height: 100%; 
+    content: "";
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .5;
+    z-index: 100;
+    transition: opacity .4s ease;
+}
